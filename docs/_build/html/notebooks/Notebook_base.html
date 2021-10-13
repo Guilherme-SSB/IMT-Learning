@@ -1,74 +1,37 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Gaussian Mixture Models &mdash; IMT-Learning v0.1 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+  <title>Gaussian Mixture Models &mdash; Algoritmos de Aprendizado</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="IMT-Learning" href="../modules.html" />
+    <link rel="prev" title="Welcome to IMT-Learning’s documentation!" href="../index.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> IMT-Learning
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,97 +39,54 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Gaussian Mixture Models</a></li>
-<li><a class="reference internal" href="#Implementação-em-código">Implementação em código</a><ul>
-<li><a class="reference internal" href="#Criando-dados-artificias">Criando dados artificias</a></li>
-<li><a class="reference internal" href="#Algoritmo-EM">Algoritmo EM</a><ul>
-<li><a class="reference internal" href="#Inicializando-parâmetros-e-visualizando-as-Gaussianas-iniciais">Inicializando parâmetros e visualizando as Gaussianas iniciais</a></li>
-<li><a class="reference internal" href="#Maximação-de-Expectativa">Maximação de Expectativa</a></li>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Teste</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gaussian Mixture Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#Implementação-em-código">Implementação em código</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Criando-dados-artificias">Criando dados artificias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Algoritmo-EM">Algoritmo EM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Inicializando-parâmetros-e-visualizando-as-Gaussianas-iniciais">Inicializando parâmetros e visualizando as Gaussianas iniciais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Maximação-de-Expectativa">Maximação de Expectativa</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-</div>
-            
-          
+<p class="caption" role="heading"><span class="caption-text">Códigos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">IMT-Learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Autores</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../authors/guilherme-barbosa.html">Guilherme Samuel de Souza Barbosa </a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors/vanderlei-parro.html">Vanderlei Cunha Parro </a></li>
+</ul>
+
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">IMT-Learning</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
       <li>Gaussian Mixture Models</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/notebooks/Notebook_base.ipynb.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
@@ -437,8 +357,8 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Gaussian-Mixture-Models">
-<h1>Gaussian Mixture Models<a class="headerlink" href="#Gaussian-Mixture-Models" title="Permalink to this headline">¶</a></h1>
+<section id="Gaussian-Mixture-Models">
+<h1>Gaussian Mixture Models<a class="headerlink" href="#Gaussian-Mixture-Models" title="Permalink to this headline"></a></h1>
 <p>Nesse notebook, veremos a estimativa de densidade com o Modelo de Misturas de Gaussianas, o Gaussian Mixture Models. Iremos entender a matemática por trás desse modelo probabilístico, quais são seus parâmetros e como ele aprende.</p>
 <p>Os Modelos de Misturas são usados para descrever uma distribuição <span class="math notranslate nohighlight">\(p(x)\)</span> por uma combinação de <span class="math notranslate nohighlight">\(K\)</span> distribuições de probabilidades</p>
 <div class="math notranslate nohighlight">
@@ -468,9 +388,9 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Implementação-em-código">
-<h1>Implementação em código<a class="headerlink" href="#Implementação-em-código" title="Permalink to this headline">¶</a></h1>
+</section>
+<section id="Implementação-em-código">
+<h1>Implementação em código<a class="headerlink" href="#Implementação-em-código" title="Permalink to this headline"></a></h1>
 <p>Nessa parte do notebook, a ideia é produzir dados artificialmente a partir de <span class="math notranslate nohighlight">\(3\)</span> distribuiçoes Gaussianas e treinar, com base no algoritmo de Maximação de Expectativa, EM Algorithm, um modelo de misturas de Gaussianas - GMM - que melhor se ajusta a esses dados.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -488,8 +408,8 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </pre></div>
 </div>
 </div>
-<div class="section" id="Criando-dados-artificias">
-<h2>Criando dados artificias<a class="headerlink" href="#Criando-dados-artificias" title="Permalink to this headline">¶</a></h2>
+<section id="Criando-dados-artificias">
+<h2>Criando dados artificias<a class="headerlink" href="#Criando-dados-artificias" title="Permalink to this headline"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -548,11 +468,11 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 <img alt="../_images/notebooks_Notebook_base_7_0.png" src="../_images/notebooks_Notebook_base_7_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Algoritmo-EM">
-<h2>Algoritmo EM<a class="headerlink" href="#Algoritmo-EM" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Inicializando-parâmetros-e-visualizando-as-Gaussianas-iniciais">
-<h3>Inicializando parâmetros e visualizando as Gaussianas iniciais<a class="headerlink" href="#Inicializando-parâmetros-e-visualizando-as-Gaussianas-iniciais" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Algoritmo-EM">
+<h2>Algoritmo EM<a class="headerlink" href="#Algoritmo-EM" title="Permalink to this headline"></a></h2>
+<section id="Inicializando-parâmetros-e-visualizando-as-Gaussianas-iniciais">
+<h3>Inicializando parâmetros e visualizando as Gaussianas iniciais<a class="headerlink" href="#Inicializando-parâmetros-e-visualizando-as-Gaussianas-iniciais" title="Permalink to this headline"></a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -617,9 +537,9 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Maximação-de-Expectativa">
-<h3>Maximação de Expectativa<a class="headerlink" href="#Maximação-de-Expectativa" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Maximação-de-Expectativa">
+<h3>Maximação de Expectativa<a class="headerlink" href="#Maximação-de-Expectativa" title="Permalink to this headline"></a></h3>
 <p><strong>Etapa E:</strong></p>
 <div class="math notranslate nohighlight">
 \[\gamma_{ik} = \frac{\phi_k \space \mathcal{N}(x_i | \mu_i, \sigma_i^2)}{\sum_{j=1}^{K} \phi_j \space \mathcal{N}(x_i | \mu_j, \sigma_j^2)  }\]</div>
@@ -749,52 +669,39 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to IMT-Learning’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../modules.html" class="btn btn-neutral float-right" title="IMT-Learning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, Vanderlei Parro, Guilherme Samuel, Lucas e Jean.
-
-    </p>
+    <p>&#169; Copyright 2021, Vanderlei Parro, Guilherme Barbosa, Lucas Cardoso e Jean Silva.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

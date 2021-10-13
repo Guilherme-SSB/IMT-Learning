@@ -19,8 +19,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'IMT-Learning'
-copyright = '2021, Vanderlei Parro, Guilherme Samuel, Lucas e Jean'
-author = 'Vanderlei Parro, Guilherme Samuel, Lucas e Jean'
+copyright = '2021, Vanderlei Parro, Guilherme Barbosa, Lucas Cardoso e Jean Silva'
+author = 'Vanderlei Parro, Guilherme Barbosa, Lucas Cardoso e Jean Silva'
 
 # The full version, including alpha/beta/rc tags
 release = 'v0.1'
@@ -33,7 +33,8 @@ master_doc = 'index'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'nbsphinx'
+    'nbsphinx',
+    'sphinx.ext.autodoc'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -51,6 +52,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.ipynb_checkpoints']
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+
+# html_logo = 'images/icons/Full_white_background.png'
+# html_favicon = 'images/icons/Small_white_background.ico'
+
+html_title = 'Algoritmos de Aprendizado'
+html_short_title = 'ML'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

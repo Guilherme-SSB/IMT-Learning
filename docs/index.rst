@@ -13,6 +13,17 @@ Welcome to IMT-Learning's documentation!
    notebooks/Notebook_base
 
 
+.. toctree::
+   :maxdepth: 3
+   :caption: Códigos
+
+   modules
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Autores
+
+   authors
 
 Indices and tables
 ==================
