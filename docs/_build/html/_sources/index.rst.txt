@@ -8,9 +8,9 @@ Welcome to IMT-Learning's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Teste
+   :caption: Modelos de Mistura
 
-   notebooks/Notebook_base
+   notebooks/gaussian_mixture_models
 
 
 .. toctree::
