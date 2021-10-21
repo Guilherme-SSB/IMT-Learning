@@ -53,7 +53,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.ipynb_checkpoints']
 #
 html_theme = 'sphinx_rtd_theme'
 
-# html_logo = 'images/icons/Full_white_background.png'
+html_logo = 'images/logo.png'
 # html_favicon = 'images/icons/Small_white_background.ico'
 
 html_title = 'Algoritmos de Aprendizado'

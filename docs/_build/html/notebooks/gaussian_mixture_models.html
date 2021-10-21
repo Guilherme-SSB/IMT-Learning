@@ -31,6 +31,7 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
             <a href="../index.html" class="icon icon-home"> IMT-Learning
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -400,7 +401,7 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 <h2>Implementação em código<a class="headerlink" href="#Implementação-em-código" title="Permalink to this headline"></a></h2>
 <p>Nessa parte do notebook, a ideia é produzir dados artificialmente a partir de <span class="math notranslate nohighlight">\(3\)</span> distribuiçoes Gaussianas e treinar, com base no algoritmo de Maximação de Expectativa, EM Algorithm, um modelo de misturas de Gaussianas - GMM - que melhor se ajusta a esses dados.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -418,7 +419,7 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 <section id="Criando-dados-artificias">
 <h3>Criando dados artificias<a class="headerlink" href="#Criando-dados-artificias" title="Permalink to this headline"></a></h3>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -441,7 +442,7 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -481,7 +482,7 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 <section id="Inicializando-parâmetros-e-visualizando-as-Gaussianas-iniciais">
 <h4>Inicializando parâmetros e visualizando as Gaussianas iniciais<a class="headerlink" href="#Inicializando-parâmetros-e-visualizando-as-Gaussianas-iniciais" title="Permalink to this headline"></a></h4>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -499,7 +500,7 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -531,7 +532,7 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -562,7 +563,7 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 <div class="math notranslate nohighlight">
 \[N_k := \sum_{i=1}^{N} \gamma_{ik}\]</div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -570,8 +571,8 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </pre></div>
 </div>
 </div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -640,8 +641,578 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 </pre></div>
 </div>
 </div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_0.png" src="../_images/notebooks_gaussian_mixture_models_16_0.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_1.png" src="../_images/notebooks_gaussian_mixture_models_16_1.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_2.png" src="../_images/notebooks_gaussian_mixture_models_16_2.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_3.png" src="../_images/notebooks_gaussian_mixture_models_16_3.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_4.png" src="../_images/notebooks_gaussian_mixture_models_16_4.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_5.png" src="../_images/notebooks_gaussian_mixture_models_16_5.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_6.png" src="../_images/notebooks_gaussian_mixture_models_16_6.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_7.png" src="../_images/notebooks_gaussian_mixture_models_16_7.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_8.png" src="../_images/notebooks_gaussian_mixture_models_16_8.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_9.png" src="../_images/notebooks_gaussian_mixture_models_16_9.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_10.png" src="../_images/notebooks_gaussian_mixture_models_16_10.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_11.png" src="../_images/notebooks_gaussian_mixture_models_16_11.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_12.png" src="../_images/notebooks_gaussian_mixture_models_16_12.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_13.png" src="../_images/notebooks_gaussian_mixture_models_16_13.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_14.png" src="../_images/notebooks_gaussian_mixture_models_16_14.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_15.png" src="../_images/notebooks_gaussian_mixture_models_16_15.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_16.png" src="../_images/notebooks_gaussian_mixture_models_16_16.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_17.png" src="../_images/notebooks_gaussian_mixture_models_16_17.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_18.png" src="../_images/notebooks_gaussian_mixture_models_16_18.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_19.png" src="../_images/notebooks_gaussian_mixture_models_16_19.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_20.png" src="../_images/notebooks_gaussian_mixture_models_16_20.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_21.png" src="../_images/notebooks_gaussian_mixture_models_16_21.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_22.png" src="../_images/notebooks_gaussian_mixture_models_16_22.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_23.png" src="../_images/notebooks_gaussian_mixture_models_16_23.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_24.png" src="../_images/notebooks_gaussian_mixture_models_16_24.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_25.png" src="../_images/notebooks_gaussian_mixture_models_16_25.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_26.png" src="../_images/notebooks_gaussian_mixture_models_16_26.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_27.png" src="../_images/notebooks_gaussian_mixture_models_16_27.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_28.png" src="../_images/notebooks_gaussian_mixture_models_16_28.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_29.png" src="../_images/notebooks_gaussian_mixture_models_16_29.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_30.png" src="../_images/notebooks_gaussian_mixture_models_16_30.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_31.png" src="../_images/notebooks_gaussian_mixture_models_16_31.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_32.png" src="../_images/notebooks_gaussian_mixture_models_16_32.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_33.png" src="../_images/notebooks_gaussian_mixture_models_16_33.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_34.png" src="../_images/notebooks_gaussian_mixture_models_16_34.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_35.png" src="../_images/notebooks_gaussian_mixture_models_16_35.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_36.png" src="../_images/notebooks_gaussian_mixture_models_16_36.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_37.png" src="../_images/notebooks_gaussian_mixture_models_16_37.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_38.png" src="../_images/notebooks_gaussian_mixture_models_16_38.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_39.png" src="../_images/notebooks_gaussian_mixture_models_16_39.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_40.png" src="../_images/notebooks_gaussian_mixture_models_16_40.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_41.png" src="../_images/notebooks_gaussian_mixture_models_16_41.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_42.png" src="../_images/notebooks_gaussian_mixture_models_16_42.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_43.png" src="../_images/notebooks_gaussian_mixture_models_16_43.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_44.png" src="../_images/notebooks_gaussian_mixture_models_16_44.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_45.png" src="../_images/notebooks_gaussian_mixture_models_16_45.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_46.png" src="../_images/notebooks_gaussian_mixture_models_16_46.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_47.png" src="../_images/notebooks_gaussian_mixture_models_16_47.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_48.png" src="../_images/notebooks_gaussian_mixture_models_16_48.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_49.png" src="../_images/notebooks_gaussian_mixture_models_16_49.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_50.png" src="../_images/notebooks_gaussian_mixture_models_16_50.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_51.png" src="../_images/notebooks_gaussian_mixture_models_16_51.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_52.png" src="../_images/notebooks_gaussian_mixture_models_16_52.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_53.png" src="../_images/notebooks_gaussian_mixture_models_16_53.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_54.png" src="../_images/notebooks_gaussian_mixture_models_16_54.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_55.png" src="../_images/notebooks_gaussian_mixture_models_16_55.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_56.png" src="../_images/notebooks_gaussian_mixture_models_16_56.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_57.png" src="../_images/notebooks_gaussian_mixture_models_16_57.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_58.png" src="../_images/notebooks_gaussian_mixture_models_16_58.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_59.png" src="../_images/notebooks_gaussian_mixture_models_16_59.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_60.png" src="../_images/notebooks_gaussian_mixture_models_16_60.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_61.png" src="../_images/notebooks_gaussian_mixture_models_16_61.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_62.png" src="../_images/notebooks_gaussian_mixture_models_16_62.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_63.png" src="../_images/notebooks_gaussian_mixture_models_16_63.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_64.png" src="../_images/notebooks_gaussian_mixture_models_16_64.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_65.png" src="../_images/notebooks_gaussian_mixture_models_16_65.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_66.png" src="../_images/notebooks_gaussian_mixture_models_16_66.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_67.png" src="../_images/notebooks_gaussian_mixture_models_16_67.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_68.png" src="../_images/notebooks_gaussian_mixture_models_16_68.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_69.png" src="../_images/notebooks_gaussian_mixture_models_16_69.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_70.png" src="../_images/notebooks_gaussian_mixture_models_16_70.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_71.png" src="../_images/notebooks_gaussian_mixture_models_16_71.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_72.png" src="../_images/notebooks_gaussian_mixture_models_16_72.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_73.png" src="../_images/notebooks_gaussian_mixture_models_16_73.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_74.png" src="../_images/notebooks_gaussian_mixture_models_16_74.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_75.png" src="../_images/notebooks_gaussian_mixture_models_16_75.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_76.png" src="../_images/notebooks_gaussian_mixture_models_16_76.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_77.png" src="../_images/notebooks_gaussian_mixture_models_16_77.png" />
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+O modelo convergiu após a iteração 78
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_gaussian_mixture_models_16_79.png" src="../_images/notebooks_gaussian_mixture_models_16_79.png" />
+</div>
+</div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
+<span></span><span class="n">em_iter</span> <span class="o">=</span> <span class="mi">51</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="input_area highlight-python notranslate"><div class="highlight"><pre>
@@ -650,7 +1221,7 @@ com componente ao qual pertence cada ponto de dados - com base no modelo atual. 
 <span class="kn">import</span> <span class="nn">os</span>
 
 <span class="n">filenames</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">em_iter</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">em_iter</span><span class="p">):</span>
     <span class="c1"># create file name and append it to a list</span>
     <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">.png&#39;</span>
     <span class="n">filenames</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
